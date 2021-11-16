@@ -1,6 +1,5 @@
 package by.itacademy.task3.formArray;
 
-
 import java.util.Arrays;
 
 import java.util.stream.Stream;

@@ -1,7 +1,5 @@
 package by.itacademy.task3.fromFile;
-
 import java.io.BufferedReader;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -13,6 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new FileReader("src/by/itacademy/task3/fromFile/Books"));
+
         List<Books> books = new ArrayList<>();
 
         Map<String, Integer> bookValueMap = new HashMap<>();

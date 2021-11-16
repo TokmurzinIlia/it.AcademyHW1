@@ -1,9 +1,5 @@
 package by.itacademy.task3.fromFile;
 
-
-import java.util.Arrays;
-import java.util.stream.Stream;
-
 public class Books {
 
     int id;

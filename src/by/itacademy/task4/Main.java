@@ -8,11 +8,6 @@ import by.itacademy.task4.PassengerCar.MinivanPassengerCar;
 import by.itacademy.task4.PassengerCar.SedanPassengerCar;
 import by.itacademy.task4.PassengerCar.UniversalPassengerCar;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
