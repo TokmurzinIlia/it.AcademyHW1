@@ -1,4 +1,4 @@
-package by.itacademy.task3;
+package by.itacademy.task3.formArray;
 
 
 import java.util.Arrays;

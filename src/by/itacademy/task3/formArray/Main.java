@@ -1,5 +1,4 @@
-package by.itacademy.task3;
-import java.util.List;
+package by.itacademy.task3.formArray;
 
 public class Main {
     public static void main(String[] args) {
