@@ -1,20 +1,22 @@
 package by.itacademy.task3.formArray;
 
 import java.util.Arrays;
-
 import java.util.stream.Stream;
 
 public class Book {
 
     int id;
-    String title;
-    String authors;
     int yearOfPublication;
     int numberOfPages;
+
     double price;
+
+    String title;
+    String authors;
     String bindingType;
 
-    public Book(int id, String title, String authors, int yearOfPublication, int numberOfPages, double price, String bindingType) {
+    public Book(int id, String title, String authors, int yearOfPublication, int numberOfPages, double price, String bindingType)
+    {
         this.id = id;
         this.title = title;
         this.authors = authors;
@@ -25,7 +27,8 @@ public class Book {
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Книга : " +
                 "id='" + id + '\'' +
                 ", title=" + title + '\'' +
@@ -38,20 +41,13 @@ public class Book {
                 '}';
     }
 
-    public Book() {
+    public Book()
+    {
 
     }
 
     public int getId() {
         return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getAuthors() {
-        return authors;
     }
 
     public int getYearOfPublication() {
@@ -66,9 +62,18 @@ public class Book {
         return price;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthors() {
+        return authors;
+    }
+
     public String getBindingType() {
         return bindingType;
     }
+
 
     public void setId(int id) {
         this.id = id;
@@ -79,9 +84,13 @@ public class Book {
     }
 
 
-    public static void getBookAuthor(String author, Book[] arrayBooks) {
+    public static void getBookAuthor(String author, Book[] arrayBooks)
+    {
+
         System.out.println("Книги, автор - " + author + ":");
+
         Stream<Book> streamFromArrays = Arrays.stream(arrayBooks);
+
         streamFromArrays
                 .filter(Book -> Book.getAuthors().equals(author))
                 .forEach(System.out::println);
@@ -89,9 +98,13 @@ public class Book {
         System.out.println();
     }
 
-    public static void getContainWord(String word, Book[] arrayBooks) {
+    public static void getContainWord(String word, Book[] arrayBooks)
+    {
+
         System.out.println("Книги, содержащие слово " + "'" + word + "'" + ":");
+
         Stream<Book> streamFromArrays2 = Arrays.stream(arrayBooks);
+
         streamFromArrays2
                 .filter(Book -> Book.getTitle().contains(word))
                 .forEach(System.out::println);
@@ -99,9 +112,13 @@ public class Book {
         System.out.println();
     }
 
-    public static void getYearOfPublicationFromTo (int from, int to, Book[] arrayBooks) {
+    public static void getYearOfPublicationFromTo (int from, int to, Book[] arrayBooks)
+    {
+
         System.out.println("Книги, выпущенные  с " + from + " по " +  to + " гг : ");
+
         Stream<Book> streamFromArrays3 = Arrays.stream(arrayBooks);
+
         streamFromArrays3
                 .filter(Book -> Book.getYearOfPublication() >= from && Book.getYearOfPublication() <= to)
                 .forEach(System.out::println);

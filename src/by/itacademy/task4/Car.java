@@ -17,7 +17,8 @@ public abstract  class Car {
 
 
     public Car(String stateNumber, String brand, String model, double fuelConsumption, double price, double velocity,
-               int maxPassengers, int doors) {
+               int maxPassengers, int doors)
+    {
         this.stateNumber = stateNumber;
         this.brand = brand;
         this.model = model;
@@ -28,8 +29,10 @@ public abstract  class Car {
         this.doors = doors;
     }
 
-    protected Car() {
+    protected Car()
+    {
     }
+
     public String getStateNumber() {
         return stateNumber;
     }
@@ -93,6 +96,7 @@ public abstract  class Car {
     public void setDoors(int doors) {
         this.doors = doors;
     }
+
     @Override
     public String toString() {
         return "Автомобиль : " +

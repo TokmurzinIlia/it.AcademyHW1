@@ -3,14 +3,17 @@ package by.itacademy.task3.fromFile;
 public class Books {
 
     int id;
-    String title;
-    String authors;
     int yearOfPublication;
     int numberOfPages;
+
     double price;
+
+    String title;
+    String authors;
     String bindingType;
 
-    public Books(int id, String title, String authors, int yearOfPublication, int numberOfPages, double price, String bindingType) {
+    public Books(int id, String title, String authors, int yearOfPublication, int numberOfPages, double price, String bindingType)
+    {
         this.id = id;
         this.title = title;
         this.authors = authors;
@@ -21,7 +24,8 @@ public class Books {
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Книга : " +
                 "id='" + id + '\'' +
                 ", title=" + title + '\'' +
@@ -34,20 +38,13 @@ public class Books {
                 '}';
     }
 
-    public Books() {
+    public Books()
+    {
 
     }
 
     public int getId() {
         return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getAuthors() {
-        return authors;
     }
 
     public int getYearOfPublication() {
@@ -60,6 +57,14 @@ public class Books {
 
     public double getPrice() {
         return price;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthors() {
+        return authors;
     }
 
     public String getBindingType() {

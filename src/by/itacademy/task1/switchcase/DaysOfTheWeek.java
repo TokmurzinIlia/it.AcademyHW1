@@ -2,9 +2,11 @@ package by.itacademy.task1.switchcase;
 
 class DaysOfTheWeek {
 
-    protected void setDaysOfTheWeek(int number) {
+    protected void setDaysOfTheWeek(int number)
+    {
 
-        switch (number) {
+        switch (number)
+        {
             case 1:
                 System.out.println("Monday");
                 break;

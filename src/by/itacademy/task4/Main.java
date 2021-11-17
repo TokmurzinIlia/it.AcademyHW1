@@ -11,7 +11,9 @@ import by.itacademy.task4.PassengerCar.UniversalPassengerCar;
 
 public class Main {
     public static void main(String[] args) {
+
         TaxiStation taxiStation = new TaxiStation();
+
         SedanPassengerCar sedan1 = new SedanPassengerCar("2125","Lada", "Kalina", 7,
                 7500, 185);
         UniversalPassengerCar unversal1 = new UniversalPassengerCar("4568", "Audi", "F6",
